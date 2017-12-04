@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: .14rem;
+}
+html,body,.box{
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+}
+html{
+	font-size: 625%;
+}
+i,em{
+	font-style: normal;
+}
+b{
+	font-weight: normal;
+}
+
+ul li ,ol li{list-style: none;}
+a{text-decoration: none;color: #000}
+.box{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+header{
+    width:100%;
+    height: .58rem;
+    background: #53CAC3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    color:#fff;
+}
+section{
+    width:100%;
+    flex:1;
+    flex-direction: column;
+    overflow-y: scroll;
+    background: #E9EFEF;
+    .nav{
+        width:100%;
+        height: auto;
+        display: flex;
+        border-bottom: 1px solid #ccc;
+        background: #fff;
+        li{
+            width:33.3%;
+            height: .44rem;
+            text-align: center;
+            line-height: .44rem;
+            border-right: 1px solid #ccc;
+        }
+    }
+    .dls{
+        width:94%;
+        height: auto;
+        background: #fff;
+        margin-left: 3%;
+        margin-top: .05rem;
+        display:flex;
+        padding-top: .1rem;
+        padding-bottom: .12rem;
+        dt{
+            width:25%;
+            img{
+                width:100%;
+            }
+        }
+        dd{
+            width:75%;
+            .pp1{
+                font-size: .16px;
+                font-weight: bold;
+                margin-top: .05rem;
+            }
+            .pp2,.pp3{
+                font-size: 12px;
+                color: #666;
+                margin-top: .15rem;
+            }
+            .pp4{
+                font-size: 12px;
+                color: #666;
+                margin-top: .2rem;
+                i{
+                    color: #53CAC3;
+                }
+            }
+        }
+    }
+}
+footer{
+    width:100%;
+    height: .65rem;
+    border-top:1px solid #ccc;
+    display:flex;
+    align-items: center;
+    a{
+        width:25%;
+        height: 100%;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        em{
+            font-size: 12px;
+            color:#666;
+        }
+    }
+}
